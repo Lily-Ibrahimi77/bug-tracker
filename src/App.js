@@ -4,6 +4,7 @@ import Issues from './components/Issues/Issues';
 import BugsPeriorityPie from './components/BugsPeriorityPie';
 import BugsSolvedPie from './components/BugsSolvedPie';
 import {bugsData} from "./bugsData"
+import NavBar from "./components/NavBar/NavBar";
 //the Issues is going to load when we click on a btn , I made it here just to see the style
 function App() {
   const [solvedData, setSolvedData] = useState([]);
@@ -26,8 +27,9 @@ function App() {
 
   return (
     <div className="App">
+      <NavBar/>
       <header className="App-header">
-       <h1>Bug Tracker</h1>
+       <h1 class="mb-3">Bug Tracker</h1>
       </header>
       <Card />
       <Issues/>
